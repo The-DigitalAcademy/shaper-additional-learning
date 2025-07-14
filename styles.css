@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --color-light: #F8F9FA;
+    --color-navy: #01317F;
+    --color-tangerine: #FF7900;
+    --color-matcha: #E8EFCC;
+    --color-turquoise: #00C9B1;
+    --color-violet: #C755FF;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+
+    img {
+        width: 250px;
+        display: inline-block;
+    }
+}
+
+h1, h2, h3 {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+strong {
+  font-weight: bold;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    padding: 15px 15px;
+
+    p {
+        margin: 0;
+        font-size: xx-small;
+    }
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+a {
+    color:var(--color-violet);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.details-content-summary {
+    padding-left: 0px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.content-summary {
+    background-color: var(--color-light);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-weight: bold;
+
+    list-style-type: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    align-items: center;
+    line-height: 1.33;
+}
+
+.content-summary::after {
+    color: var(--color-violet);
+    font-family: 'Material Icons';
+    content: 'add';
+    background-size: cover;
+    margin-left: .75em;
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: center;
+}
+
+.details-content-summary:hover > .content-summary::after {
+    transform: rotate(360deg);
+    transform-origin: center;
+}
+
+.details-content-summary[open] > .content-summary::after {
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.details-content-summary[open]:hover > .content-summary::after {
+    transform: rotate(315deg);
+    transform-origin: center;
+}
+
+.text-segment {
+    padding: 10px;
+    text-align: left;
+    border-radius: 0px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column; /* Stack the sides vertically */
+    }
+
+    .left-side {
+        flex: 1; /* Make the left side take full width */
+    }
+
+    .right-side {
+        display: none; /* Hide the right side */
+    }
+}
+
+.page-container {
+    max-width: 960px;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    padding: 24px 16px;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.page-container ul {
+  list-style-type: disc; /* Or whatever style you prefer */
+  padding-left: 1.5rem;  /* Add spacing for the bullet points */
+  margin-bottom: 1rem;   /* Space after the list */
+}
+
+.page-container li {
+  margin-bottom: 0.5rem; /* Space between list items */
+  line-height: 1.5;
+}
+
+.page-hero {
+    background-image: url('https://raw.githubusercontent.com/The-DigitalAcademy/shaper-elearning-images/refs/heads/main/CI/stock-images/pexels-artempodrez-7773744-fade.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    padding: 15% 5%;
+    color: #ffffff;
+
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.page-hero h1 {
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.heading-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between icon and text */
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.heading-with-icon .icon {
+  height: 4em;
+  width: auto;
+  flex-shrink: 0; /* prevents icon from shrinking */
+}
+
+.heading-with-icon h2 {
+  margin: 0;
+  line-height: 1.1;
+}
