@@ -19,7 +19,7 @@
 
 @media (min-width: 576px) {
     .body {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), url("images/background-image.webp");
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), url("../images/background-image.webp");
         background-repeat: no-repeat;
         background-position-y: top;
         background-position-x: center;
