@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --color-light: #F8F9FA;
+    --color-navy: #01317F;
+    --color-tangerine: #FF7900;
+    --color-matcha: #E8EFCC;
+    --color-turquoise: #00C9B1;
+    --color-violet: #C755FF;
+}
+
+.body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 576px) {
+    .body {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), url("/images/background-image.webp");
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: center;
+        background-size: cover;
+    }
+}
+
+.header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+
+.header__img {
+    width: 275px;
+}
+
+.header__intro {
+    color: var(--color-violet);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.main {
+    margin: 0 8vw;
+    padding: 1rem 0;
+}
+
+@media (min-width: 576px) {
+    .main {
+        margin: 0 10vw;
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.2rem;
+}
+
+.section__title {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+@media (min-width: 576px) {
+    .cards-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        align-items: start;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    row-gap: .7rem;
+}
+
+@media (min-width: 576px) {
+    .card {
+        background: var(--color-light);
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #d9d9d9;
+    }
+}
+
+.card__img {
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.card__title {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+.card__body {
+    color: #757575;
+    font-size: .8rem;
+}
+
+.card__button {
+    background: var(--color-tangerine);
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--color-light);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin-right: auto;
+    font-size: .8rem;
+}
+
+.footer {
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 1.5rem 0;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #000;
+}
+
+@media (min-width: 576px) {
+    .footer__link {
+        color: var(--color-light);
+    }
+}
