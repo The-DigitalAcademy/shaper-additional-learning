@@ -145,6 +145,7 @@ p {
 .card__body {
     color: #757575;
     font-size: .8rem;
+    margin: 0;
 }
 
 .card__button {
