@@ -27,7 +27,8 @@
         text-align: left;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
         text-align: left;
     }
 }
@@ -52,7 +53,7 @@
 }
 
 a {
-    color:var(--color-violet);
+    color: var(--color-violet);
     text-decoration: none;
 }
 
@@ -169,15 +170,15 @@ p {
 }
 
 .page-container ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-  text-align: left;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 .page-container li {
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
 }
 
 .page-hero {
@@ -190,14 +191,14 @@ p {
 }
 
 .hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .page-hero h1 {
@@ -211,22 +212,24 @@ p {
 }
 
 .heading-with-icon {
-  display: flex;
-  align-items: center;
-  gap: 12px; /* space between icon and text */
-  padding-top: 20px;
-  padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* space between icon and text */
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .heading-with-icon .icon {
-  height: 4em;
-  width: auto;
-  flex-shrink: 0; /* prevents icon from shrinking */
+    height: 4em;
+    width: auto;
+    flex-shrink: 0;
+    /* prevents icon from shrinking */
 }
 
 .heading-with-icon h2 {
-  margin: 0;
-  line-height: 1.1;
+    margin: 0;
+    line-height: 1.1;
 }
 
 .footer {
@@ -250,4 +253,49 @@ p {
     .footer__link {
         color: var(--color-light);
     }
+}
+
+.resource-section {
+    margin-bottom: 48px;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    padding-top: 15px;
+}
+
+.resource-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resource-card:hover {
+    transform: translateY(-4px);
+}
+
+.resource-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    color: var(--color-tangerine);
+}
+
+.resource-card h4 {
+    margin: 0 0 8px 0;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--color-tangerine);
+}
+
+.resource-card p {
+    flex-grow: 1;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
 }
