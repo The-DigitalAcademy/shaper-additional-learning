@@ -246,7 +246,7 @@ p {
 
 .footer__link {
     text-decoration: none;
-    color: #000;
+    color: var(--color-violet);
 }
 
 @media (min-width: 576px) {
